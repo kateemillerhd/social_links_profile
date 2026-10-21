@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --background-color: hsl(0, 0%, 8%);
+    --container-bkgd: hsl(0, 0%, 12%);
+    --link-bkgd: hsl(0, 0%, 20%);
+    --subheading: hsl(75, 94%, 57%);
+    --color: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-family: "NormalInter";
+    src: url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SemiBoldInter";
+    src: url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BoldInter";
+    src: url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--container-bkgd);
+    border-radius: 12px;
+    width: calc(100% - 50px);
+    max-width: 384px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.picture {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
+h1 {
+    color: var(--color);
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: -8px;
+}
+
+h2 {
+    color: var(--subheading);
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 13px;
+}
+
+p {
+    color: var(--color);
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    width: 100%;
+}
+
+li {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: var(--link-bkgd);
+    text-decoration: none;
+    color: var(--color);
+    text-align: center;
+    
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    padding: 12px;
+    border-radius: 8px;
+}
+
+a:hover {
+    background-color: var(--subheading);
+    color: var(--background-color);
+}
